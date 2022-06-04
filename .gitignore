@@ -1,5 +1,7 @@
 build
 app/node_modules
+node_modules
+.secret
 # testing
 /coverage
 

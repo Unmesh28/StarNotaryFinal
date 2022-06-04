@@ -44,6 +44,7 @@ const App = {
     const { lookUptokenIdToStarInfo } = this.meta.methods;
     const starId = document.getElementById('lookid').value;
     let name = await lookUptokenIdToStarInfo(starId).send({ from: this.account});
+    console.log(name);
     App.setStatus("Star name of id " + starId + " : " + name);
   }
 
